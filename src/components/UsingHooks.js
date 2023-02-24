@@ -36,12 +36,12 @@ export const UsingHooks = () => {
   const changeTwoPropertyValues = () => {
     setArrayOfObjects((prev) => {
       const x = prev;
-      if (x[1].name === 'John') {
-        x[1].name = 'Lea';
-        x[1].address = 'China';
+      if (x[0].name === 'Abel') {
+        x[0].name = 'Lugtu';
+        x[0].address = 'Philippinessssss';
       } else {
-        x[1].name = 'John';
-        x[1].address = 'USA';
+        x[0].name = 'Abel';
+        x[0].address = 'Philippines';
       }
 
       return [...x];
