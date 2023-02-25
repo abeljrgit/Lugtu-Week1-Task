@@ -1,4 +1,4 @@
-# Lugtu-Session4-Task1
+# Lugtu-Week1-Task
 
 Higher Order Function, React hooks, Functional Componet, Lodash exploration and Search Bar Component.
 
