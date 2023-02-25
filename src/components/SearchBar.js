@@ -9,14 +9,16 @@ export const SearchBar = () => {
 
   const queryResult = (queryString) => {
     const pattern = new RegExp(lowerCase(queryString), 'gi');
-    console.log(DummyData.userData);
     const filteredValuesArr = filter(DummyData.userData, (obj) => {
       const condition = pattern.test(lowerCase(obj.name));
       return condition;
     });
 
-    setSearchResult([...filteredValuesArr]);
-    console.log(queryString);
+    if (queryString.length) {
+      setSearchResult([...filteredValuesArr]);
+    } else {
+      setSearchResult([]);
+    }
   };
 
   return (
