@@ -21,14 +21,14 @@ PracticePropTypes.propTypes = {
   valElement: PropTypes.element,
   valElementType: PropTypes.elementType,
 
-  valMessage: PropTypes.instanceOf(Message),
+  // valMessage: PropTypes.instanceOf(Message),
 
   valEnum: PropTypes.oneOf(['News', 'Photos']),
 
   valUnion: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
-    PropTypes.instanceOf(Message),
+    // PropTypes.instanceOf(Message),
   ]),
 
   valArrayOf: PropTypes.arrayOf(PropTypes.number),

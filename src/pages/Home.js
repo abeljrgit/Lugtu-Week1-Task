@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { RandomColor, UsingHooks } from '../components';
+import { LodashPractice, RandomColor, UsingHooks } from '../components';
 import { Typography } from '@mui/material';
 
 export class Home extends Component {
   render() {
     return (
       <section>
+        <LodashPractice />
         <RandomColor
           child={
             <Typography variant="body2">
