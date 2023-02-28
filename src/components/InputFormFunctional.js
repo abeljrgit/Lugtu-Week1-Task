@@ -9,7 +9,9 @@ export const InputFormFunctional = () => {
       emailError: '',
       passwordError: [],
     },
-    isFormValid: false,
+
+    isEmailValid: false,
+    isPasswordValid: false,
   });
 
   const emailOnChangeHandler = (e) => {
@@ -35,7 +37,7 @@ export const InputFormFunctional = () => {
         ...prev,
         email: emailValue,
         error: { ...prev.error, emailError: emailError },
-        isFormValid: isEmailValid,
+        isEmailValid: isEmailValid,
       };
     });
   };
@@ -86,14 +88,14 @@ export const InputFormFunctional = () => {
         ...prev,
         password: passwordValue,
         error: { ...prev.error, passwordError: passwordError },
-        isFormValid: isPasswordValid,
+        isPasswordValid: isPasswordValid,
       };
     });
   };
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    if (formValue.isFormValid) {
+    if (formValue.isEmailValid && formValue.isPasswordValid) {
       alert(
         `Success!\nEmail is:${formValue.email}\nPassword is:${formValue.password}`
       );
