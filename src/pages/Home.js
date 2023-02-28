@@ -4,6 +4,7 @@ import {
   RandomColor,
   SearchBar,
   UsingHooks,
+  InputFormFunctional,
 } from '../components';
 import { Box, Typography } from '@mui/material';
 
@@ -34,6 +35,7 @@ export class Home extends Component {
             <UsingHooks />
           </Box>
           <SearchBar />
+          <InputFormFunctional />
         </Box>
       </section>
     );

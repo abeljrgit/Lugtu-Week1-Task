@@ -4,3 +4,4 @@ export * from './UsingHooks';
 export * from './PracticePropTypes';
 export * from './LodashPractice';
 export * from './SearchBar';
+export * from './InputFormFunctional';
